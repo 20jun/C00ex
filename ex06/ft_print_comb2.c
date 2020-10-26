@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: youngjle <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: youngjle <youngjle@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/22 18:33:26 by youngjle          #+#    #+#             */
-/*   Updated: 2020/10/26 20:57:22 by youngjle         ###   ########.fr       */
+/*   Created: 2020/10/26 19:35:04 by youngjle          #+#    #+#             */
+/*   Updated: 2020/10/26 20:30:33 by youngjle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,5 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_alphabet(void)
-{
-	char alphabet;
-
-	alphabet = 'a';
-	while (alphabet <= 'z')
-	{
-		ft_putchar(alphabet);
-		alphabet++;
-	}
+void	ft_print_comb2(void)
 }

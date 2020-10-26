@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: youngjle <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: youngjle <youngjle@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/22 18:33:26 by youngjle          #+#    #+#             */
-/*   Updated: 2020/10/26 20:57:22 by youngjle         ###   ########.fr       */
+/*   Created: 2020/10/26 19:34:07 by youngjle          #+#    #+#             */
+/*   Updated: 2020/10/26 19:44:40 by youngjle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+void ft_print_comb2(void);
+
+int main(void)
 {
-	write(1, &c, 1);
-}
-
-void	ft_print_alphabet(void)
-{
-	char alphabet;
-
-	alphabet = 'a';
-	while (alphabet <= 'z')
-	{
-		ft_putchar(alphabet);
-		alphabet++;
-	}
+	ft_print_comb2();
 }

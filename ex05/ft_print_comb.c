@@ -6,7 +6,7 @@
 /*   By: youngjle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 21:35:54 by youngjle          #+#    #+#             */
-/*   Updated: 2020/10/22 22:50:46 by youngjle         ###   ########.fr       */
+/*   Updated: 2020/10/26 21:17:29 by youngjle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,30 +19,32 @@ void	ft_putchar(char c)
 
 void	ft_print_comb(void)
 {
-	char arr[6];
-	arr[6] = "hello";
+	char number[3];
 
-	char a = '0';
-	char b = '1';
-	char c = '2';
-	char d = ',';
-	char e = ' ';
-	
-	while (a <= '7')
+	number[0] = '0';
+	number[1] = '1';
+	number[2] = '2';
+	while (number[0] <= '7')
 	{
-		while (b <= '8')
+		while (number[1] <= '8')
 		{
-			while (c <= '9')
+			while (number[2] <= '9')
 			{
-				ft_putchar(a);
-				ft_putchar(b);
-				ft_putchar(c);
-				ft_putchar(d);
-				ft_putchar(e);
-
-				c++;
+				ft_putchar(number[0]);
+				ft_putchar(number[1]);
+				ft_putchar(number[2]);
+				if (a != '7' || b != '8')
+				{
+					ft_putchar(',');
+					ft_putchar(' ');
+				}
+				number[2]++;
 			}
+			number[1]++;
+			number[2] = number[1] + 1;
 		}
+		number[0]++;
+		number[1] = number[0] + 1;
+		number[2] = number[1] + 1;
 	}
-	ft_putchar(a[0]);
 }

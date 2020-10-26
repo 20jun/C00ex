@@ -6,7 +6,7 @@
 /*   By: youngjle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 20:17:37 by youngjle          #+#    #+#             */
-/*   Updated: 2020/10/22 21:32:27 by youngjle         ###   ########.fr       */
+/*   Updated: 2020/10/26 20:32:47 by youngjle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void ft_is_negative(int n);
 
 int main(void)
 {
-	ft_is_negative(0);
+	ft_is_negative(-1);
 }
